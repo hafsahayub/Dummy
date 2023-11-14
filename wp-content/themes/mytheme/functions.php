@@ -80,15 +80,41 @@ function post_type()
 {
 
   $args = array(
-    'public' =>true,
-    'has_archive' => true,
-    'supports'=>array('title','editor','thumbnail'),
-    //'rewrite'=>array('slug')
+        'labels'=> array(
+                'name'=>'Cars',
+                'singular_name'=>'car',
+        ),
+        //if it is set to: True:parent-child relation(pages) False:no parent-child relation(posts)
+        'hierarchical'=> true,
+        'menu_icon'=>'dashicons-index-card',
+        'public' =>true,
+        'has_archive' => true,
+        'supports'=>array('title','editor','thumbnail'),
+        //'rewrite'=>array('slug')
 
   );
 
   register_post_type('cars', $args);
 
 }
-//init hook:It loads before the actual website loads
+//init hook: It loads before the actual website loads
 add_action('init', 'post_type');
+
+
+//Custom Taxonomy
+function my_taxonomy(){
+
+          $args = array(
+                  'labels'=>array(
+                    'name'=>'Brands',
+                    'singular_name'=>'Brand',
+
+                  ),
+                  'public'=>true,
+                   //If it is set to: True:(Category) False(Tag)
+                  'hierarchical'=>true,
+
+          );
+          register_taxonomy('brands', array('cars'), $args);
+}
+add_action('init','my_taxonomy');
