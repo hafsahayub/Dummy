@@ -74,3 +74,21 @@ function my_sidebars()
               );
 }
 add_action('widgets_init', 'my_sidebars');
+
+//Custom post types
+function post_type()
+{
+
+  $args = array(
+    'public' =>true,
+    'has_archive' => true,
+    'supports'=>array('title','editor','thumbnail'),
+    //'rewrite'=>array('slug')
+
+  );
+
+  register_post_type('cars', $args);
+
+}
+//init hook:It loads before the actual website loads
+add_action('init', 'post_type');
