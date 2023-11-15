@@ -18,11 +18,26 @@
             <?php wp_link_pages();?>
 
         </div>
-        <div class="col-lg-6">
-
-        </div>
     </div>
-   
+
+    <div class="col-lg-6">
+            <ul>
+                <li>
+        
+                    Colour: <?php the_field('colour');?>
+
+                </li>
+
+                
+                <li>
+
+                    Registration Number: <?php the_field('registration_number');?>
+
+                </li>
+               
+            </ul>
+    </div>
+
 </div>
 </section>
 <?php get_footer();?>
