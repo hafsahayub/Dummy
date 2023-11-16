@@ -118,3 +118,15 @@ function my_taxonomy(){
           register_taxonomy('brands', array('cars'), $args);
 }
 add_action('init','my_taxonomy');
+
+//Form functionality
+
+add_action('wp_ajax_enquiry','enquiry_form');
+add_action('wp_ajax_nopriv_enquiry','enquiry_form');
+
+function enquiry_form()
+{
+    $data = json_encode($_POST);
+
+    wp_send_json_success($data); 
+}
