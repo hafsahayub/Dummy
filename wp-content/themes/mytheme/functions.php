@@ -119,14 +119,47 @@ function my_taxonomy(){
 }
 add_action('init','my_taxonomy');
 
-//Form functionality
 
-add_action('wp_ajax_enquiry','enquiry_form');
-add_action('wp_ajax_nopriv_enquiry','enquiry_form');
+//Form functionality
+add_action('wp_ajax_enquiry', 'enquiry_form');
+add_action('wp_ajax_nopriv_enquiry', 'enquiry_form');
 
 function enquiry_form()
 {
-    $data = json_encode($_POST);
+    $formdata = [];
 
-    wp_send_json_success($data); 
+    wp_parse_str($_POST['enquiry'], $formdata);
+
+    // Admin email
+    $admin_email = get_option('admin_email');
+
+    // Email headers
+    $headers[] = 'Content-Type: text/html; charset=UTF-8';
+    $headers[] = 'From: ' . $admin_email;
+    $headers[] = 'Reply-To: ' . $formdata['email'];
+
+    // Who are we sending email to?
+    $send_to = $admin_email;
+
+    // Subject
+    $subject = "Enquiry from " . $formdata['fname'] . ' ' . $formdata['lname'];
+
+    // Message
+    $message = '';
+    foreach ($formdata as $index => $field) {
+        $message .= '<strong>' . $index . '</strong>:' . $field . '<br/>';
+    }
+
+    try {
+        if (wp_mail($send_to, $subject, $message, $headers)) {
+            wp_send_json_success('Email Sent');
+        } else {
+            wp_send_json_error('Email error');
+        }
+    } catch (Exception $e) {
+        error_log('Email error: ' . $e->getMessage());
+        wp_send_json_error($e->getMessage());
+    }
+    wp_send_json_success($formdata['fname']);
 }
+//
