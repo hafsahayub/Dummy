@@ -1,11 +1,20 @@
+
+<div id="success_message" class="alert alert-success" style="display:none"></div>
+
+<div id="error_message" class="alert alert-danger" style="display:none"></div>
+
+
 <form id="enquiry">
     <h2>Send your enquiry about <?php the_title();?></h2>
+
+
+    <input type="hidden" name="registration" value="<?php the_field('registration_number');?>">
 
         <div class="form-group row mb-2">
 
             <div class="col-lg-6">
                 
-                <input type="text" name="fname" placeholder="First Name" class="form-control" required>
+                <input type="text" name="First Name" placeholder="First Name" class="form-control" required>
 
             </div>
 
@@ -59,6 +68,7 @@
 
             var formdata = new FormData;
             formdata.append('action','enquiry');
+            formdata.append('nonce','<?php echo wp_create_nonce('ajax-nonce');?>');
             formdata.append('enquiry',form);
 
             $.ajax(endpoint, 
@@ -70,11 +80,17 @@
 
                 success: function(res)
                 {
-                    alert(res.data);
+                    $('#enquiry').fadeOut(200);
+                    $('#success_message').text('Thanks for your enquiry').show();
+                    $('#enquiry').trigger('reset');
+                    $('#enquiry').fadeIn(500);
+                  
                 },
 
                 error: function(err)
                 {
+                    alert(err.responseJSON.data);
+                    $('#error_message').text('There was en error with the submission').show();
 
                 }
             })
