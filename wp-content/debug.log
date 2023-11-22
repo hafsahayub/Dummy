@@ -12,3 +12,176 @@
 [21-Nov-2023 10:43:58 UTC] PHP Warning:  Undefined array key "fname" in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php on line 145
 [21-Nov-2023 10:51:07 UTC] PHP Warning:  Undefined array key "fname" in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php on line 145
 [21-Nov-2023 11:24:47 UTC] PHP Warning:  Undefined array key "fname" in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php on line 152
+[22-Nov-2023 06:22:52 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\header.php on line 26
+[22-Nov-2023 06:26:39 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\header.php on line 26
+[22-Nov-2023 06:28:40 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\header.php on line 26
+[22-Nov-2023 06:35:43 UTC] PHP Deprecated:  Function the_block_template_skip_link is deprecated since version 6.4.0! Use wp_enqueue_block_template_skip_link() instead. in C:\xampp\htdocs\Dummy\wp-includes\functions.php on line 6031
+[22-Nov-2023 07:10:53 UTC] PHP Warning:  Undefined array key "fname" in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php on line 152
+[22-Nov-2023 07:10:54 UTC] PHP Fatal error:  Uncaught TypeError: custom_mailer(): Argument #1 ($phpmailer) must be of type PHPMailer, PHPMailer\PHPMailer\PHPMailer given, called in C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php on line 324 and defined in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php:185
+Stack trace:
+#0 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(324): custom_mailer(Object(PHPMailer\PHPMailer\PHPMailer))
+#1 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\Dummy\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\Dummy\wp-includes\pluggable.php(540): do_action_ref_array('phpmailer_init', Array)
+#4 C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php(161): wp_mail(Array, 'Enquiry from  a...', '<strong>registr...', Array)
+#5 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(324): enquiry_form('')
+#6 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\Dummy\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\Dummy\wp-admin\admin-ajax.php(188): do_action('wp_ajax_enquiry')
+#9 {main}
+  thrown in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php on line 185
+[22-Nov-2023 07:11:15 UTC] PHP Warning:  Undefined array key "fname" in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php on line 152
+[22-Nov-2023 07:11:15 UTC] PHP Fatal error:  Uncaught TypeError: custom_mailer(): Argument #1 ($phpmailer) must be of type PHPMailer, PHPMailer\PHPMailer\PHPMailer given, called in C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php on line 324 and defined in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php:185
+Stack trace:
+#0 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(324): custom_mailer(Object(PHPMailer\PHPMailer\PHPMailer))
+#1 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\Dummy\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\Dummy\wp-includes\pluggable.php(540): do_action_ref_array('phpmailer_init', Array)
+#4 C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php(161): wp_mail(Array, 'Enquiry from  a...', '<strong>registr...', Array)
+#5 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(324): enquiry_form('')
+#6 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\Dummy\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\Dummy\wp-admin\admin-ajax.php(188): do_action('wp_ajax_enquiry')
+#9 {main}
+  thrown in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php on line 185
+[22-Nov-2023 07:11:18 UTC] PHP Warning:  Undefined array key "fname" in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php on line 152
+[22-Nov-2023 07:11:18 UTC] PHP Fatal error:  Uncaught TypeError: custom_mailer(): Argument #1 ($phpmailer) must be of type PHPMailer, PHPMailer\PHPMailer\PHPMailer given, called in C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php on line 324 and defined in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php:185
+Stack trace:
+#0 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(324): custom_mailer(Object(PHPMailer\PHPMailer\PHPMailer))
+#1 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\Dummy\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\Dummy\wp-includes\pluggable.php(540): do_action_ref_array('phpmailer_init', Array)
+#4 C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php(161): wp_mail(Array, 'Enquiry from  a...', '<strong>registr...', Array)
+#5 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(324): enquiry_form('')
+#6 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\Dummy\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\Dummy\wp-admin\admin-ajax.php(188): do_action('wp_ajax_enquiry')
+#9 {main}
+  thrown in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php on line 185
+[22-Nov-2023 07:11:18 UTC] PHP Warning:  Undefined array key "fname" in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php on line 152
+[22-Nov-2023 07:11:18 UTC] PHP Fatal error:  Uncaught TypeError: custom_mailer(): Argument #1 ($phpmailer) must be of type PHPMailer, PHPMailer\PHPMailer\PHPMailer given, called in C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php on line 324 and defined in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php:185
+Stack trace:
+#0 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(324): custom_mailer(Object(PHPMailer\PHPMailer\PHPMailer))
+#1 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\Dummy\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\Dummy\wp-includes\pluggable.php(540): do_action_ref_array('phpmailer_init', Array)
+#4 C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php(161): wp_mail(Array, 'Enquiry from  a...', '<strong>registr...', Array)
+#5 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(324): enquiry_form('')
+#6 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\Dummy\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\Dummy\wp-admin\admin-ajax.php(188): do_action('wp_ajax_enquiry')
+#9 {main}
+  thrown in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php on line 185
+[22-Nov-2023 07:12:14 UTC] PHP Warning:  Undefined array key "fname" in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php on line 152
+[22-Nov-2023 07:12:14 UTC] PHP Fatal error:  Uncaught TypeError: custom_mailer(): Argument #1 ($phpmailer) must be of type PHPMailer, PHPMailer\PHPMailer\PHPMailer given, called in C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php on line 324 and defined in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php:185
+Stack trace:
+#0 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(324): custom_mailer(Object(PHPMailer\PHPMailer\PHPMailer))
+#1 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\Dummy\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\Dummy\wp-includes\pluggable.php(540): do_action_ref_array('phpmailer_init', Array)
+#4 C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php(161): wp_mail(Array, 'Enquiry from  a...', '<strong>registr...', Array)
+#5 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(324): enquiry_form('')
+#6 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\Dummy\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\Dummy\wp-admin\admin-ajax.php(188): do_action('wp_ajax_enquiry')
+#9 {main}
+  thrown in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php on line 185
+[22-Nov-2023 07:12:54 UTC] PHP Warning:  Undefined array key "fname" in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php on line 152
+[22-Nov-2023 07:12:54 UTC] PHP Fatal error:  Uncaught TypeError: custom_mailer(): Argument #1 ($phpmailer) must be of type PHPMailer, PHPMailer\PHPMailer\PHPMailer given, called in C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php on line 324 and defined in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php:185
+Stack trace:
+#0 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(324): custom_mailer(Object(PHPMailer\PHPMailer\PHPMailer))
+#1 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\Dummy\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\Dummy\wp-includes\pluggable.php(540): do_action_ref_array('phpmailer_init', Array)
+#4 C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php(161): wp_mail(Array, 'Enquiry from  a...', '<strong>registr...', Array)
+#5 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(324): enquiry_form('')
+#6 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\Dummy\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\Dummy\wp-admin\admin-ajax.php(188): do_action('wp_ajax_enquiry')
+#9 {main}
+  thrown in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php on line 185
+[22-Nov-2023 07:13:36 UTC] PHP Warning:  Undefined array key "fname" in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php on line 152
+[22-Nov-2023 07:13:36 UTC] PHP Fatal error:  Uncaught TypeError: custom_mailer(): Argument #1 ($phpmailer) must be of type PHPMailer, PHPMailer\PHPMailer\PHPMailer given, called in C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php on line 324 and defined in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php:185
+Stack trace:
+#0 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(324): custom_mailer(Object(PHPMailer\PHPMailer\PHPMailer))
+#1 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\Dummy\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\Dummy\wp-includes\pluggable.php(540): do_action_ref_array('phpmailer_init', Array)
+#4 C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php(161): wp_mail(Array, 'Enquiry from  a...', '<strong>registr...', Array)
+#5 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(324): enquiry_form('')
+#6 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\Dummy\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\Dummy\wp-admin\admin-ajax.php(188): do_action('wp_ajax_enquiry')
+#9 {main}
+  thrown in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php on line 185
+[22-Nov-2023 07:13:43 UTC] PHP Warning:  Undefined array key "fname" in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php on line 152
+[22-Nov-2023 07:13:43 UTC] PHP Fatal error:  Uncaught TypeError: custom_mailer(): Argument #1 ($phpmailer) must be of type PHPMailer, PHPMailer\PHPMailer\PHPMailer given, called in C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php on line 324 and defined in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php:185
+Stack trace:
+#0 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(324): custom_mailer(Object(PHPMailer\PHPMailer\PHPMailer))
+#1 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\Dummy\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\Dummy\wp-includes\pluggable.php(540): do_action_ref_array('phpmailer_init', Array)
+#4 C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php(161): wp_mail(Array, 'Enquiry from  a...', '<strong>registr...', Array)
+#5 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(324): enquiry_form('')
+#6 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\Dummy\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\Dummy\wp-admin\admin-ajax.php(188): do_action('wp_ajax_enquiry')
+#9 {main}
+  thrown in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php on line 185
+[22-Nov-2023 07:13:51 UTC] PHP Warning:  Undefined array key "fname" in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php on line 152
+[22-Nov-2023 07:13:51 UTC] PHP Fatal error:  Uncaught TypeError: custom_mailer(): Argument #1 ($phpmailer) must be of type PHPMailer, PHPMailer\PHPMailer\PHPMailer given, called in C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php on line 324 and defined in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php:185
+Stack trace:
+#0 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(324): custom_mailer(Object(PHPMailer\PHPMailer\PHPMailer))
+#1 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\Dummy\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\Dummy\wp-includes\pluggable.php(540): do_action_ref_array('phpmailer_init', Array)
+#4 C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php(161): wp_mail(Array, 'Enquiry from  a...', '<strong>registr...', Array)
+#5 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(324): enquiry_form('')
+#6 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\Dummy\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\Dummy\wp-admin\admin-ajax.php(188): do_action('wp_ajax_enquiry')
+#9 {main}
+  thrown in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php on line 185
+[22-Nov-2023 07:13:51 UTC] PHP Warning:  Undefined array key "fname" in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php on line 152
+[22-Nov-2023 07:13:51 UTC] PHP Fatal error:  Uncaught TypeError: custom_mailer(): Argument #1 ($phpmailer) must be of type PHPMailer, PHPMailer\PHPMailer\PHPMailer given, called in C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php on line 324 and defined in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php:185
+Stack trace:
+#0 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(324): custom_mailer(Object(PHPMailer\PHPMailer\PHPMailer))
+#1 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\Dummy\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\Dummy\wp-includes\pluggable.php(540): do_action_ref_array('phpmailer_init', Array)
+#4 C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php(161): wp_mail(Array, 'Enquiry from  a...', '<strong>registr...', Array)
+#5 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(324): enquiry_form('')
+#6 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\Dummy\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\Dummy\wp-admin\admin-ajax.php(188): do_action('wp_ajax_enquiry')
+#9 {main}
+  thrown in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php on line 185
+[22-Nov-2023 07:13:52 UTC] PHP Warning:  Undefined array key "fname" in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php on line 152
+[22-Nov-2023 07:13:52 UTC] PHP Fatal error:  Uncaught TypeError: custom_mailer(): Argument #1 ($phpmailer) must be of type PHPMailer, PHPMailer\PHPMailer\PHPMailer given, called in C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php on line 324 and defined in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php:185
+Stack trace:
+#0 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(324): custom_mailer(Object(PHPMailer\PHPMailer\PHPMailer))
+#1 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\Dummy\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\Dummy\wp-includes\pluggable.php(540): do_action_ref_array('phpmailer_init', Array)
+#4 C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php(161): wp_mail(Array, 'Enquiry from  a...', '<strong>registr...', Array)
+#5 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(324): enquiry_form('')
+#6 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\Dummy\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\Dummy\wp-admin\admin-ajax.php(188): do_action('wp_ajax_enquiry')
+#9 {main}
+  thrown in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php on line 185
+[22-Nov-2023 07:14:30 UTC] PHP Warning:  Undefined array key "fname" in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php on line 152
+[22-Nov-2023 07:14:30 UTC] PHP Fatal error:  Uncaught TypeError: custom_mailer(): Argument #1 ($phpmailer) must be of type PHPMailer, PHPMailer\PHPMailer\PHPMailer given, called in C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php on line 324 and defined in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php:185
+Stack trace:
+#0 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(324): custom_mailer(Object(PHPMailer\PHPMailer\PHPMailer))
+#1 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\Dummy\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\Dummy\wp-includes\pluggable.php(540): do_action_ref_array('phpmailer_init', Array)
+#4 C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php(161): wp_mail(Array, 'Enquiry from  a...', '<strong>registr...', Array)
+#5 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(324): enquiry_form('')
+#6 C:\xampp\htdocs\Dummy\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\Dummy\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\Dummy\wp-admin\admin-ajax.php(188): do_action('wp_ajax_enquiry')
+#9 {main}
+  thrown in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php on line 185
+[22-Nov-2023 07:15:58 UTC] PHP Warning:  Undefined array key "fname" in C:\xampp\htdocs\Dummy\wp-content\themes\mytheme\functions.php on line 152

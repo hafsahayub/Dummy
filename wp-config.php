@@ -17,6 +17,8 @@
  *
  * @package WordPress
  */
+// define('SMTP_LOGIN','hafsahayub124@gmail.com');
+// define('SMTP_PASSWORD','shazia&123');
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */

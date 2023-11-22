@@ -169,4 +169,28 @@ function enquiry_form()
     }
     wp_send_json_success($formdata['fname']);
 }
-//
+
+
+ //Register Custom Navigation Walker
+ 
+function register_navwalker()
+{
+	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+}
+add_action( 'after_setup_theme', 'register_navwalker' );
+
+//PHP Mailer function
+
+// add_action('phpmailer_init','custom_mailer');
+// function custom_mailer(PHPMailer $phpmailer)
+// {
+
+//   $phpmailer->SetFrom('hafsahayub124@gmail.com','Hafsah Ayub');
+//   $phpmailer->Host = 'email-smtp-us-west-2.amazonaws.com';
+//   $phpmailer->Port = 587;
+//   $phpmailer->SMPTAuth = true;
+//   $phpmailer->SMTPSecure ='tls';
+//   $phpmailer->Username = SMTP_LOGIN;
+//   $phpmailer->Passowrd = SMTP_PASSWORD;
+//   $phpmailer->IsSMTP();
+// }
